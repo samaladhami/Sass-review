@@ -1,0 +1,42 @@
+$my-font: Helvetica, sans-serif;
+$my-color: #f473ab;
+@mixin border-radius($pxs){
+  -webkit-border-radius: $pxs;
+     -moz-border-radius: $pxs;
+      -ms-border-radius: $pxs;
+          border-radius: $pxs;
+
+}
+
+@mixin div-style($color, $margin-top){
+  background: $color;
+  margin-top: $margin-top;
+}
+
+
+.test{
+  h1{
+    font-size: 100px;
+    color: $my-color;
+    font-family: $my-font;
+  }
+  .div-1{
+    .div-2{
+      @include border-radius(20px)
+      background: lightgray;
+      h1{
+        color:green;
+      }
+    }
+  }
+}
+.test-2{
+  @include div-style(#f48365 , 10px);
+  @include border-radius(10px);
+  padding: 20px;
+}
+
+.test-3{
+  @extend .test-2;
+  background: #f15490;
+}

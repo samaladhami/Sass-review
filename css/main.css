@@ -1,0 +1,26 @@
+.test h1 {
+  font-size: 100px;
+  color: #f473ab;
+  font-family: Helvetica, sans-serif; }
+
+.test .div-1 .div-2 {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background: lightgray; }
+
+.test .div-1 .div-2 h1 {
+  color: green; }
+
+.test-2, .test-3 {
+  background: #f48365;
+  margin-top: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px; }
+
+.test-3 {
+  background: #f15490; }
